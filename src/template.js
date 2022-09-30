@@ -22,6 +22,26 @@
                 </div>
             </div>
         </div>
+        <div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 id="managerName" class="card-title">${engName}</h5>
+                    <h6 id="managerId " class="card-subtitle mb-2 text-muted">${engId}</h6>
+                    <p class="card-text">Github: ${engGithub}</p>
+                    <a href="#" class="card-link">${engEmail}</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 id="managerName" class="card-title">${intName}</h5>
+                    <h6 id="managerId " class="card-subtitle mb-2 text-muted">${intId}</h6>
+                    <p class="card-text">Office number: ${intSchool}</p>
+                    <a href="#" class="card-link">${intEmail}</a>
+                </div>
+            </div>
+        </div>
     </main>
 
 </body>
