@@ -77,10 +77,8 @@ function generateManager() {
             },
         ])
         .then((mgrInput) => {
-            
             const manager = new Manager (mgrInput.mgrName, mgrInput.mgrId, mgrInput.mgrEmail, mgrInput.officeNumber);
             team.push(manager);
-            console.log(team);
             generateMenu();
         })
 }
@@ -110,10 +108,8 @@ function generateEngineer() {
             },
         ])
         .then((engInput) => {
-            team.push(role);
             const engineer = new Engineer (engInput.engName, engInput.engId, engInput.engEmail, engInput.engGithub);
             team.push(engineer);
-            console.log(team);
             generateMenu();
         })
 }
@@ -143,25 +139,11 @@ function generateIntern() {
             },
         ])
         .then((intInput) => {
-            team.push(role);
             const intern = new Intern (intInput.intName, intInput.intId, intInput.intEmail, intInput.intSchool);
             team.push(intern);
-            console.log(team);
             generateMenu();
         })
 }
-
-// const writeFile = data => {
-//     fs.writeFile('./dist/index.html', data, err => {
-//         if (err) {
-//             console.log(err);
-//             return;
-//         } else {
-//             console.log("Your team profile has been successfully created! Please check out the index.html")
-//         }
-//     })
-// }; 
-
 
 function createHtml () {
     console.log("Team has been created!")
@@ -169,8 +151,6 @@ function createHtml () {
     fs.writeFileSync(outputPath, generateTeam(team), "UTF-8")
 }
 
-
-console.log(team);
 
 
 

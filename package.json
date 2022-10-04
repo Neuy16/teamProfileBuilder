@@ -1,27 +1,9 @@
 {
   "dependencies": {
     "inquirer": "^8.2.4",
-    "jest": "^29.0.3"
-  },
-  "name": "teamprofilebuilder",
-  "description": "",
-  "version": "1.0.0",
-  "main": "index.js",
-  "directories": {
-    "lib": "lib",
-    "test": "test"
+    "jest": "^29.1.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Neuy16/teamProfileBuilder.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Neuy16/teamProfileBuilder/issues"
-  },
-  "homepage": "https://github.com/Neuy16/teamProfileBuilder#readme"
+    "test": "jest"
+  }
 }
